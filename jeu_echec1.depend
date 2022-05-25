@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1650448805 source:c:\users\fedi\desktop\jeu_echec1\main.cpp
+	"piece.h"
+	"pion.h"
+	"table.h"
+
+1650365113 c:\users\fedi\desktop\jeu_echec1\include\piece.h
+	<iostream>
+	<string.h>
+	<map>
+
+1650448991 source:c:\users\fedi\desktop\jeu_echec1\src\piece.cpp
+	"piece.h"
+
+1650448892 source:c:\users\fedi\desktop\jeu_echec1\src\pion.cpp
+	"pion.h"
+
+1650365845 c:\users\fedi\desktop\jeu_echec1\include\pion.h
+	<piece.h>
+
+1650365319 c:\users\fedi\desktop\jeu_echec1\include\table.h
+	<iostream>
+	<windows.h>
+	"pion.h"
+
+1650365202 source:c:\users\fedi\desktop\jeu_echec1\src\table.cpp
+	"table.h"
+

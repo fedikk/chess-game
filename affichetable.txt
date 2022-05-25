@@ -1,0 +1,77 @@
+tab[0][0]='T';
+    tab[0][1]='C';
+    tab[0][2]='F';
+    tab[0][3]='D';
+    tab[0][4]='R';
+    tab[0][5]='F';
+    tab[0][6]='C';
+    tab[0][7]='T';
+    for (int i=0 ; i<8 ; i++ ) {
+        tab[1][i]='P' ;
+    }
+    for (int i=2;i<6;i++){
+        for (int j=0;j<8;j++) {
+            tab[i][j]=' ';
+        }
+    }
+    for (int i=0 ; i<8 ; i++ ) {
+        tab[6][i]='P';
+    }
+    tab[7][0]='T';
+    tab[7][1]='C';
+    tab[7][2]='F';
+    tab[7][3]='D';
+    tab[7][4]='R';
+    tab[7][5]='F';
+    tab[7][6]='C';
+    tab[7][7]='T';
+
+
+    cout <<tab[7][7]<<endl;
+}
+
+
+void table::afficher() {
+    HANDLE h =GetStdHandle(STD_OUTPUT_HANDLE);
+    cout<<"  " ;
+    for ( char c='a';c<'i';c++) {
+        cout <<"| "<<c<<" ";
+    }
+    cout<<"|"<<endl;
+    cout<<"--------------------------------------"<<endl;
+    for (int i=0 ; i<2 ; i++ ) {
+        cout<<i+1<<" ";
+        for (int j=0 ; j<=7 ; j++ ) {
+        SetConsoleTextAttribute(h,4);
+        cout<<"| "<<tab[i][j]<<" ";
+        }
+    SetConsoleTextAttribute(h,7);
+    cout<<"| "<<i+1<<" | "<<endl;
+    cout <<endl;
+}
+//el partie el bidha eli fel west
+for (int i=2 ; i<6 ; i++ ) {
+    cout<<i+1<<" ";
+    for (int j=0 ; j<=7 ; j++ ) {
+    cout<<"| "<<tab[i][j]<<" ";
+}
+cout<<"| "<<i+1<<" | "<<endl;
+cout <<endl;
+}
+//el partie el zar9a lekhra
+for (int i=6 ; i<8 ; i++ ) {
+    cout<<i+1<<" ";
+    for (int j=0 ; j<=7 ; j++ ) {
+    SetConsoleTextAttribute(h,1);
+    cout<<"| "<<tab[i][j]<<" ";
+}
+SetConsoleTextAttribute(h,7);
+cout<<"| "<<i+1<<" | "<<endl;
+cout <<endl;
+}
+cout<<"--------------------------------------"<<endl;
+cout<<"  " ;
+    for ( char c='a';c<'i';c++) {
+        cout <<"| "<<c<<" ";
+    }
+    cout<<"|"<<endl
